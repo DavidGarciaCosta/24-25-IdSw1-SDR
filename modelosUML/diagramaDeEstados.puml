@@ -1,0 +1,23 @@
+@startuml
+
+[*] --> Asignatura : Creación de Asignatura
+
+state Asignatura {
+    [*] --> EnPreparacion : "Asignatura creada"
+    EnPreparacion --> AsignadaAProfesor : "Asignada a Profesor"
+    AsignadaAProfesor --> EnImparticion : "Asignatura en curso"
+    EnImparticion --> Evaluacion : "Curso completado"
+    Evaluacion --> InformeFinalizado : "Evaluación terminada"
+    InformeFinalizado --> [*] : "Memoria generada"
+}
+
+state Profesor {
+    [*] --> Impartiendo : "Asignado a Asignatura"
+    Impartiendo --> ElaborandoMemoria : "Curso finalizado"
+    ElaborandoMemoria --> Disponible : "Memoria académica completada"
+}
+
+Asignatura --> Profesor : "Asignada a"
+Profesor --> Asignatura : "Imparte"
+
+@enduml

@@ -1,0 +1,50 @@
+@startuml
+package UNEATLANTICO {
+
+object Ingenieria_Informatica {
+  curso = "2023-2024"
+}
+
+object deptoInformatica {
+  jefeDepartamento = "Masias"
+}
+
+object Alberto_Lopez {
+  titulación = "Doctor"
+  categoría = "Asociado"
+  experienciaDocente = 5
+  experienciaVirtual = 2
+  experienciaInvestigador = 3
+  experienciaProfesional = 7
+  ECTS = 20
+}
+
+object contrato {
+  tipo = "Completo Indefinido"
+}
+
+object Programacion {
+  semestre = "1º"
+  codigoCampus = "INF101"
+  tipo = "Obligatoria"
+  ECTS = 6
+}
+
+object planEstudios {
+}
+
+object memoriaAcademica {
+  año = 2023
+}
+
+Ingenieria_Informatica --> Programacion : contiene
+Programacion --> Alberto_Lopez : impartida por
+Alberto_Lopez --> deptoInformatica : pertenece a
+Alberto_Lopez --> contrato : tiene un
+Alberto_Lopez --> planEstudios : sigue un
+memoriaAcademica --> Ingenieria_Informatica : envia informacion a
+Programacion --> memoriaAcademica : guarda datos en
+Alberto_Lopez --> memoriaAcademica : guarda datos en
+
+}
+@enduml

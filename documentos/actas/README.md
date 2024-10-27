@@ -20,6 +20,7 @@ En esta carpeta se irán registrando **todas las actas** de nuestras reuniones c
 Cada acta incluirá:
 
 - **Fecha y hora** de la reunión
+- **Tipo de reunión** (presencial o virtual)
 - **Resumen** de los temas tratados
 - **Próximas acciones** a realizar
 - **Participantes**

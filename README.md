@@ -15,11 +15,14 @@
 
 Este proyecto consiste en la creación de un software de control de base de datos, actualmente gestionado en una hoja de Excel. Nuestro objetivo será optimizarla, automatizarla y crear una interfaz de acceso sencillo, que permita las siguientes funcionalidades:
 
-- **Asignación**: Asignación de asignaturas por curso.
-- **Profesores**: Posibilidad de modificar características (altas y títulos de profesores).
-- **Indicadores**: Filtros e indicadores por títulos de profesores.
-- **Histórico**: Guardar el histórico de cambios realizados.
-- **Informes**: Generación de informes de forma rápida y fácil.
+| **Funcionalidad**           | **Descripción**                                                                                   | **Notas**                                                             |
+|-----------------------------|---------------------------------------------------------------------------------------------------|----------------------------------------------------------------------|
+| **Asignación**              | Asignar asignaturas y profesores a cada curso.                                                  | Mantener, ya que es esencial.                                      |
+| **Profesores**              | Gestionar datos de profesores (altas, títulos, movilidad).                                       | Mantener, pero simplificar campos para evitar duplicidades.         |
+| **Indicadores e Informes**  | Generar indicadores y extraer datos para informes en un solo módulo.                            | Compactar en un solo módulo para reportar resultados automáticamente.|
+| **Histórico**               | Registro de cambios realizados en la base de datos.                                             | Mantener, esencial para el seguimiento.                             |
+| **Carga Académica**         | Cálculos de carga y dedicación por asignatura y profesor.                                       | Combinar **Carga Titulación** y **Dedicación** en una sola función.  |
+| **Requisitos Legales**      | Verificación de requisitos legales según normativas vigentes.                                    | Mantener como función independiente para asegurar cumplimiento.     |
 
 > [!NOTE]
 > Por la sensibilidad de los datos, la hoja de cálculo original está protegida al igual que este repositorio.
@@ -27,13 +30,13 @@ Este proyecto consiste en la creación de un software de control de base de dato
 
 ## 📂 Índice de Contenidos
 - [📝 Actas](documentos/actas/README.md)
-- 🎨 Diseño
+- 🎨 Artefactos
   - [📊 Modelo del Dominio](documentos/MdD/README.md)
   - [🛠️ Casos de Uso](documentos/CdU/README.md)
 
 <div align="center">
 
-| 💬 [**Discusiones**](https://github.com/DavidGarciaCosta/24-25-IdSw1-SDR/discussions) | 🐛 [**Issues**](https://github.com/DavidGarciaCosta/24-25-IdSw1-SDR/issues) |
+| 💬 [**Discussions**](https://github.com/DavidGarciaCosta/24-25-IdSw1-SDR/discussions) | 🐛 [**Issues**](https://github.com/DavidGarciaCosta/24-25-IdSw1-SDR/issues) |
 |:-----------------:|:-------------:|
 
 </div>
